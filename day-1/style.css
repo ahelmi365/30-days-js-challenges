@@ -7,35 +7,30 @@
     padding: 1rem;
     cursor: pointer;
     color: white;
-
-    border: 1px solid black;
-    width: 100px;
-    border-radius: 5px;
-
     background-color: rgba(0, 0, 0, 0.4);
-
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
     transition: all 0.7s;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-
-.link-to-home{
+.link-to-home {
     display: block;
     margin-top: 2rem;
 }
-.go-home:hover {
 
+.go-home:hover {
     border-color: yellow;
 }
 
 body {
     background-image: url("drum.webp");
     background-size: cover;
-
 }
 
 .key {
