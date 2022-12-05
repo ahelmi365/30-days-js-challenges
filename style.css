@@ -1,32 +1,55 @@
-html, *::before, *::after{
+html,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: rgba(0, 0, 0, 0);
 }
-.page-header{
+
+.top-header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: white;
+}
+.page-header {
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 1px dotted gray;
+    /* position: fixed;
+    top: 0; */
+    display: block;
+    /* width: 100vw;
+    z-index: 1;
+    background-color: white; */
+
 }
 
-.days{
+.days {
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
 }
 
-.challenge-list{
+.challenge-list {
     font-size: 1.3rem;
 }
 
-.challenge-list li{
+.challenge-list li {
     padding: 8px 25px;
     border: 1px dotted gray;
     margin: 1rem;
+    transition: all 0.9s;
 }
 
-.challenge-list li a{
+.challenge-list li:hover {
+    transform: scale(1.1);
+}
+
+.challenge-list li a {
     text-decoration: none;
 }
