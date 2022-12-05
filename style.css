@@ -12,3 +12,7 @@ html, *::before, *::after{
     display: flex;
     justify-content: center;
 }
+
+.challenge-list{
+    font-size: 1.3rem;
+}
