@@ -1,2 +1,2 @@
-# 30-days-js-challenges
+# 30 Day Vanilla JS Coding Challenges
 ## Day 1: JavaScript Drum Kit

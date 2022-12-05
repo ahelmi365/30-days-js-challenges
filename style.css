@@ -1,0 +1,10 @@
+
+
+.header{
+    text-align: center;
+}
+
+.days{
+    display: flex;
+    justify-content: center;
+}
