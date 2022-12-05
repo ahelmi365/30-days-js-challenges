@@ -3,7 +3,9 @@ html, *::before, *::after{
 }
 
 
-
+body{
+    background-color: rgba(0, 0, 0, 0);
+}
 .page-header{
     text-align: center;
     padding-bottom: 1rem;
