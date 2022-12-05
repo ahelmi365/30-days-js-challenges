@@ -3,6 +3,11 @@ console.log('Day-1');
 
 document.addEventListener("keydown", playSound);
 
+const allButtons = document.querySelectorAll('.key');
+
+allButtons.forEach(key => key.addEventListener('click', playSoundClick, true));
+// document.addEventListener("click", playSoundClick, true);
+
 // fucntion to play specific sound based in the seleceted key
 function playSound(e) {
 
@@ -28,6 +33,35 @@ function playSound(e) {
 
     // add 'playing' class to the selecetd elemnt
     key.classList.add('playing');
+}
+
+
+// fucntion to play specific sound based in the seleceted key
+function playSoundClick(e) {
+
+    let clickedButtonkey = undefined;
+    if (e.target.dataset.key == undefined) {
+
+        // console.log(e.target.parentElement.dataset.key);
+        clickedButtonkey = e.target.parentElement.dataset.key;
+        // console.log(clickedButtonkey);
+    } else {
+        clickedButtonkey = e.target.dataset.key;
+        // console.log(clickedButtonkey);
+
+    }
+
+    const audio = document.querySelector(`audio[data-key="${clickedButtonkey}"]`);
+    // console.log(audio);
+
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+
+    // select the element according to the pressed key
+    const key = document.querySelector(`.key[data-key="${clickedButtonkey}"]`);
+    key.classList.add('playing');
+
 }
 
 // function to remove the 'playing' class after the Transition ends
