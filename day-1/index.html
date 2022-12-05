@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="keys">
+        <div class="key" data-key="a">A <br> <span class="key-desc">Boom</span></div>
+        <div class="key" data-key="s">S <br> <span class="key-desc">Clap</span></div>
+        <div class="key" data-key="d">D <br> <span class="key-desc">Hihat</span></div>
+        <div class="key" data-key="f">F <br> <span class="key-desc">Kick</span></div>
+        <div class="key" data-key="g">G <br> <span class="key-desc">Openhat</span></div>
+        <div class="key" data-key="h">H <br> <span class="key-desc">Ride</span></div>
+        <div class="key" data-key="j">J <br> <span class="key-desc">Snare</span></div>
+        <div class="key" data-key="k">K <br> <span class="key-desc">Tink</span></div>
+        <div class="key" data-key="l">L <br> <span class="key-desc">tom</span></div>
+    </div>
+    <div class="audios">
+        <audio src="sounds/boom.wav" data-key="a"></audio>
+        <audio src="sounds/clap.wav" data-key="s"></audio>
+        <audio src="sounds/hihat.wav" data-key="d"></audio>
+        <audio src="sounds/kick.wav" data-key="f"></audio>
+        <audio src="sounds/openhat.wav" data-key="g"></audio>
+        <audio src="sounds/ride.wav" data-key="h"></audio>
+        <audio src="sounds/snare.wav" data-key="j"></audio>
+        <audio src="sounds/tink.wav" data-key="k"></audio>
+        <audio src="sounds/tom.wav" data-key="l"></audio>
+    </div>
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

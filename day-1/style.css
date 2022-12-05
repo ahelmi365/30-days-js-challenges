@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("drum.webp");
+    background-size: cover;
+
+}
+
+.key {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 75px;
+    max-width: 75px;
+    flex-basis: 5%;
+
+    text-align: center;
+
+    transition: all .09s;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.playing {
+    transform: scale(1.2);
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.keys {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-flow: row wrap;
+    height: 100vh;
+    row-gap: 1rem;
+}
+
+span.key-desc{
+    font-size: .8rem;
+    color: yellow;
+}
