@@ -4,8 +4,10 @@ html, *::before, *::after{
 
 
 
-.header{
+.page-header{
     text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted gray;
 }
 
 .days{
@@ -15,4 +17,14 @@ html, *::before, *::after{
 
 .challenge-list{
     font-size: 1.3rem;
+}
+
+.challenge-list li{
+    padding: 8px 25px;
+    border: 1px dotted gray;
+    margin: 1rem;
+}
+
+.challenge-list li a{
+    text-decoration: none;
 }
